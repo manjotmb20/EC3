@@ -1,4 +1,5 @@
-# EC3
+# EC3 Graph-based Consensus Maximization among Multiple Supervised and Unsupervised Models
+
 
 Description of Files
 
