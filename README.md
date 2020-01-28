@@ -1,21 +1,9 @@
 # EC3 Graph-based Consensus Maximization among Multiple Supervised and Unsupervised Models
 
-The EC3 algorithm is a graph based maximization problem that deals with the meta output data of different classification algorithms. The baseline model that we choose to compare the algorithm against is BGCM, which is a model similar to the above algorithm. Below are described the files containing implementation for different datasets. 
 
-Description of Files
+The EC3 algorithm is a graph based maximization problem that deals with the meta output data of different classification algorithms. The baseline model that we choose to compare the algorithm against is BGCM, which is a model similar to the above algorithm. 
+The new algorithm deals with a method proposed in the paper (Combination of Classification and Clustering Results with Label Propagation) for finding the bi-stochastic matrix from the given co-occurrence and membership matrix that we initially take as the input. 
+Also we padded the Yg matrix that represents the probability distribution of Groups belonging to a particular class. We also did checks on the condition of Fo, Fg so that they should adhere to the bi-stochastic nature of the algorithm. We also did some pre-processing on the initial machine learning datasets to produce better results.
 
-ensemble.iypnb-: Initial implementation of EC3 algorithm on the titanic dataset and comparison of results with other algorithms.
-
-Spambase.iypnb-: Similarly the implementation of the EC3 on the spambase dataset available online
-
-Magic.iypnb-: For the EC3 implementation on the magic gamma dataset.
-
-Adult.iypnb-: Containing the algorithm implementation on the adult.csv dataset.
-
-BGCM.m: Implementation of BGCM algorithm which is another conensus based algorithm from the paper "Graph-based Consensus Maximization among Multiple Supervised and Unsupervised Models" to compare its results to the EC3 algorithm.
-
-
-
-Datasets given-: train.csv( Titanic dataset), spam.csv(Spambase dataset), magic.csv( Magic Gamma Dataset)
 
 
